@@ -21,7 +21,7 @@
     <header class="fixed z-50 top-0 w-full text-white bg-[#000000] p-4" >
       <div class="flex justify-between">
         <ul class="ml-10">
-          <img src="/static/images/Logo.png" alt="" srcset="" class="h-12 w-40">
+          <a href="/"><img src="/static/images/Logo.png" alt="Cipher" srcset="" class="h-12 w-40"></a>
         </ul>
         <ul class="hidden md:flex space-x-16 font-bold mr-10 items-center">
           <a href="/#home">
@@ -62,8 +62,8 @@
       <div class="space-y-20 flex flex-col">
         <p class="text-white font-medium text-lg md:text-2xl  w-[80vw]  lg:w-full hover:contrast-200">Unlock your encrypted file by uploading the decryption key. Your data's security is in your hands. Select 'Upload Decryption Key' to proceed</p>
         <form action="/download_data" method="POST" enctype="multipart/form-data" class=" space-y-10 flex flex-col justify-center">
-          <input type="file" name="file" required class="w-full md:text-xl md:w-10/12 m-auto py-2 px-10 md:py-4 md:px-20 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
-          <input type="submit" class="w-full md:text-xl md:w-10/12 m-auto py-2 px-10 md:py-4 md:px-16 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
+          <input type="file" name="file" required class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-20 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
+          <input type="submit" class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-16 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
         </form>
       </div>
     </code>
