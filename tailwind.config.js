@@ -21,9 +21,20 @@ module.exports = {
               borderColor: 'white',
             },
           },
+          slideFromBottom: {
+            '0%': {
+              transform: 'translateY(100%)',
+              opacity: 0,
+            },
+            '100%' : {
+              transform: 'translateY(0)',
+              opacity: 1,
+            },
+          },
         },
         animation: {
           typing: 'typing 3s steps(20) infinite alternate, blink .7s infinite',
+          slideFromBottom: "slideFromBottom 2s ease .5s forwards",
         },
     },
   },

@@ -14,11 +14,28 @@
     html {
         scroll-behavior: smooth;
     }
+    .container {
+        transition: transform 2s ease, opacity 0.5s ease; 
+    }
 </style>
+
+<script>
+    window.addEventListener('scroll', () => {
+    const container = document.querySelector('.container');
+    const position = container.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 0.6;
+
+    if (position < screenPosition) {
+        container.style.opacity = '1';
+        container.style.transform = 'translateY(0)';
+        window.removeEventListener('scroll', onScroll);
+    }
+});
+</script>
 
 <body class="overflow-x-hidden font-[Audiowide,sans-serif] min-h-screen max-w-full">
     <!-- Header Start -->
-    <header class="w-full fixed text-white bg-[rgb(0,0,0)] p-4">
+    <header class="w-full fixed text-white bg-[rgb(0,0,0)] p-4 z-50">
         <div class="flex justify-between">
             <ul class="ml-10">
                 <a href="/"><img src="/static/images/Logo.png" alt="Cipher" srcset="" class="h-12 w-40"></a>
@@ -72,7 +89,7 @@
     <!-- ist section start -->
     <section class="p-20 bg-black space-y-16">
         <!-- ist part  -->
-        <code class="flex flex-col lg:flex-row justify-center items-center lg:-space-x-10 mt-20">
+        <code class="flex flex-col lg:flex-row justify-center items-center lg:-space-x-10 mt-20 animate-slideFromBottom relative opacity-0">
             <div class="flex justify-center mb-10 lg:mb-0 lg:justify-normal">
                 <img
                     src="/static/images/cryptographic.jpg"
@@ -98,7 +115,7 @@
             </div>
         </code>  
         <!-- 2nd part  -->
-        <code class="flex flex-col lg:flex-row justify-center items-center space-x-10 ">
+        <code class="container flex flex-col lg:flex-row justify-center items-center space-x-10 relative opacity-0 translate-y-full">
             <div class="text-white w-11/12 text-justify space-y-1 ">
                 <p class="flex font-extrabold text-green-500 text-2xl">Working:</p> <br><hr> <br>
                 <p class="text-white font-medium text-lg">
