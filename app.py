@@ -3,7 +3,7 @@ import os
 from flask import Flask, request, redirect, url_for, render_template, send_from_directory, send_file, flash
 from werkzeug.utils import secure_filename
 import tools
-import divider as dv
+import divider as dvd
 import encrypter as enc
 import decrypter as dec
 import restore as rst
@@ -24,7 +24,7 @@ def allowed_file(filename):
 
 
 def start_encryption():
-	dv.divide()
+	dvd.divide()
 	tools.empty_folder('uploads')
 	enc.encrypter()
 	return render_template('success.html')
