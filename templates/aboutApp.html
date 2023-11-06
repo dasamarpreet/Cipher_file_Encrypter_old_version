@@ -33,14 +33,14 @@
 });
 </script>
 
-<body class="overflow-x-hidden font-[Audiowide,sans-serif] min-h-screen max-w-full">
+<body class="overflow-x-hidden font-[Audiowide,sans-serif] min-h-screen max-w-full bg-black ">
     <!-- Header Start -->
-    <header class="w-full fixed text-white bg-[rgb(0,0,0)] p-4 z-50">
-        <div class="flex justify-between">
-            <ul class="ml-10">
+    <header class="w-full fixed top-0 text-white bg-[rgb(0,0,0)] p-4 z-50">
+        <div class="max-w-[85rem] mx-auto flex justify-between">
+            <ul class="">
                 <a href="/"><img src="/static/images/Logo.png" alt="Cipher" srcset="" class="h-12 w-40"></a>
             </ul>
-            <ul class="hidden md:flex space-x-16 font-bold mr-10 items-center">
+            <ul class="hidden md:flex space-x-16 font-bold items-center">
                 <a href="/#home">
                     <li class="hover:underline underline-offset-4 cursor-pointer hover:text-blue-600">
                         Home
@@ -87,19 +87,19 @@
     <!-- Header end -->
 
     <!-- ist section start -->
-    <section class="p-20 bg-black space-y-16">
+    <section class="md:p-20 bg-black space-y-16 max-w-[85rem] mx-auto">
         <!-- ist part  -->
-        <code class="flex flex-col lg:flex-row justify-center items-center lg:-space-x-10 mt-20 animate-slideFromBottom relative opacity-0">
+        <code class="flex flex-col lg:flex-row justify-center items-center mt-20 animate-slideFromBottom relative opacity-0">
             <div class="flex justify-center mb-10 lg:mb-0 lg:justify-normal">
                 <img
                     src="/static/images/cryptographic.jpg"
                     alt=""
                     srcset=""
-                    class="w-[80%] animate-pulse"/>
+                    class=" animate-pulse"/>
             </div>
             <div class="text-white w-11/12 text-justify space-y-6 flex flex-col justify-center ">
-                <p class="flex justify-center items-center font-extrabold text-green-500 text-2xl">Welcome to Cipher: File Encrypter</p> <hr>
-                <p class="text-orange-400 font-medium text-lg">
+                <p class="flex justify-center items-center font-extrabold text-green-500 md:text-2xl">Welcome to Cipher: File Encrypter</p> <hr>
+                <p class="text-orange-400 font-medium md:text-lg">
                     In today's digital age, the security of your sensitive data is of
                     paramount importance. Whether you're a business professional, a
                     student, or simply someone who values their privacy, the need to
@@ -115,10 +115,10 @@
             </div>
         </code>  
         <!-- 2nd part  -->
-        <code class="container flex flex-col lg:flex-row justify-center items-center space-x-10 relative opacity-0 translate-y-full">
+        <code class="container flex flex-col lg:flex-row justify-center items-center lg:space-x-10 relative opacity-0 translate-y-full">
             <div class="text-white w-11/12 text-justify space-y-1 ">
-                <p class="flex font-extrabold text-green-500 text-2xl">Working:</p> <br><hr> <br>
-                <p class="text-white font-medium text-lg">
+                <p class="flex font-extrabold text-green-500 md:text-2xl">Working:</p> <br><hr> <br>
+                <p class="text-white font-medium md:text-lg">
                     This is a Python software that encrypts and decrypts a file. When
                     you want to ENCRYPT a file, just go to Encrypt Page and upload any
                     file such as pdf or jpg or rar file. Now click on Upload button.
@@ -133,14 +133,14 @@
                     taken to the Success page where you can download the ORIGINAL FILE. <br>
                     Moreover, you can Scroll Down to find the Work Flow Chart of the
                     WebApp in the image below.
-                </p> <br> <hr> <br>
+                </p> <br> <hr> <br class="hidden md:flex"> 
             </div>
             <div class="hidden lg:flex justify-center items-center">
             <img
                 src="/static/images/lock.png"
                 alt=""
                 srcset=""
-                class="w-[50%] animate-pulse"
+                class="w-[55%] xl:w-[60%] animate-pulse"
             />
             </div>
         </code>
@@ -154,7 +154,7 @@
     <!-- ist section end -->
 
     <!-- 2nd section start  -->
-    <section class="brightness-90 bg-white flex flex-col md:flex-row items-center justify-between md:justify-center md:space-x-8 p-4">
+    <section class="max-w-[85rem] mx-auto brightness-90 bg-white flex flex-col md:flex-row items-center justify-between md:justify-center md:space-x-8 p-4 mt-5">
         <span class="text-blue-600">© 2023 Copyright: All rights reserved.</span>
         <a href="/#about"><span class="text-red-500 font-medium">Designed with &#x2764; by S.A.R.A.</span></a>
         <span class="text-green-500">Made in <strong class="text-orange-500"> India !</strong></span>

@@ -14,17 +14,17 @@
     scroll-behavior: smooth;
   }
 </style>
-<body class="overflow-x-hidden font-[Audiowide,sans-serif] min-h-screen max-w-full">
+<body class="overflow-x-hidden font-[Audiowide,sans-serif] min-h-screen max-w-full bg-black">
   <!-- Ist section start  -->
-  <section id="home3" class="min-h-screen max-w-full flex flex-col justify-center pb-28">
+  <section id="home_two" class="min-h-screen max-w-[85rem] mx-auto flex flex-col justify-center items-center content-center pb-28">
     <!-- Header Start -->
-    <header class="fixed z-50 top-0 w-full text-white bg-[#000000] p-4" >
+    <header class="max-w-[85rem] self-center fixed z-50 top-0 w-full text-white bg-[#000000] p-4" >
       <div class="flex justify-between">
-        <ul class="ml-10">
+        <ul class="">
           <a href="/"><img src="/static/images/Logo.png" alt="Cipher" srcset="" class="h-12 w-40"></a>
         </ul>
-        <ul class="hidden md:flex space-x-16 font-bold mr-10 items-center">
-          <a href="/#home">
+        <ul class="hidden md:flex space-x-16 font-bold items-center">
+          <a href="/">
             <li class="hover:underline underline-offset-4 cursor-pointer hover:text-blue-600">Home</li>
           </a>
           <a href="/#working">
@@ -58,12 +58,12 @@
     <!-- Header end -->
 
     <!-- landing page start -->
-    <code class="font-[Audiowide,sans-serif] p-16 mt-28 text-white rounded-md border border-blue-800 w-11/12 md:w-10/12 lg:w-7/12 text-center flex justify-center items-center m-auto backdrop-blur-sm shadow-lg shadow-blue-700/60 hover:shadow-blue-700/90 border-opacity-60">
+    <code class="font-[Audiowide,sans-serif] p-16 2xl:p-32 mt-40  text-white rounded-md border border-blue-800 w-11/12 md:w-10/12 xl:w-[60%] 2xl:w-[50%] text-center flex justify-center items-center backdrop-blur-sm shadow-lg shadow-blue-700/60 hover:shadow-blue-700/90 border-opacity-60">
       <div class="space-y-20 flex flex-col">
         <p class="text-white font-medium text-lg md:text-2xl  w-[80vw]  lg:w-full hover:contrast-200">Unlock your encrypted file by uploading the decryption key. Your data's security is in your hands. Select 'Upload Decryption Key' to proceed</p>
         <form action="/download_data" method="POST" enctype="multipart/form-data" class=" space-y-10 flex flex-col justify-center">
-          <input type="file" name="file" required class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-20 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
-          <input type="submit" class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-16 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-110 transition ease-in-out duration-500"/>
+          <input type="file" name="file" required class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-20 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-95 md:hover:scale-110 transition ease-in-out duration-500"/>
+          <input type="submit" class="w-full md:text-xl md:w-10/12 lg:w-9/12 m-auto py-2 px-10 md:py-4 md:px-16 outline outline-2 outline-offset-4 ring ring-blue-800 outline-blue-700 hover:outline-orange-700 hover:ring-red-700 rounded-lg  hover:bg-red-700/50 bg-blue-500/50 hover:scale-95 md:hover:scale-110 transition ease-in-out duration-500"/>
         </form>
       </div>
     </code>
@@ -72,7 +72,7 @@
   <!-- Ist section End  -->
 
   <!-- 2nd section start  -->
-  <section class="brightness-90 bg-white flex flex-col md:flex-row items-center justify-between md:justify-center md:space-x-8 p-4">
+  <section class="max-w-[85rem] mx-auto brightness-90 bg-white flex flex-col md:flex-row items-center justify-between space-y-1 md:space-y-0 md:justify-center md:space-x-8 p-4 text-sm md:text-base">
     <span class="text-blue-600">© 2023 Copyright: All rights reserved.</span>
     <a href="/#about"><span class="text-red-500 font-medium">Designed with &#x2764; by S.A.R.A.</span></a>
     <span class="text-green-500">Made in <strong class="text-orange-500"> India !</strong></span>
@@ -81,10 +81,9 @@
 
   <script src="/static/js/vanta1.js"></script>
   <script src="/static/js/vanta2.js"></script>
-
   <script>
     VANTA.NET({
-      el: "#home3",
+      el: "#home_two",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -101,6 +100,12 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   <script src="/static/js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
